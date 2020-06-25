@@ -1,0 +1,4 @@
+{
+  "name": "TestPlugin",
+  "main": "io.github.andrewsumsion.testplugin.TestPlugin"
+}
