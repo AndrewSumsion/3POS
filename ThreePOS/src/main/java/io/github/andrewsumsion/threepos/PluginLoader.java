@@ -76,4 +76,8 @@ public class PluginLoader {
             threads.put(entry.getKey(), thread);
         }
     }
+
+    public Map<String, Plugin> getPlugins() {
+        return plugins;
+    }
 }
