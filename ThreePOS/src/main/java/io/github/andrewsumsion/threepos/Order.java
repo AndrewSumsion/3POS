@@ -10,7 +10,9 @@ public class Order {
     private boolean paid = false;
     private String source;
 
-    public Order() {}
+    public Order() {
+        this("", "");
+    }
 
     public Order(String name, String id) {
         this.name = name;

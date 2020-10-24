@@ -4,6 +4,7 @@ io/github/andrewsumsion/threepos/Item.class
 io/github/andrewsumsion/threepos/Menu.class
 io/github/andrewsumsion/threepos/PluginLoader$1.class
 io/github/andrewsumsion/threepos/Serializer.class
+io/github/andrewsumsion/threepos/PluginInfo.class
 io/github/andrewsumsion/threepos/JsonSerializer.class
 io/github/andrewsumsion/threepos/ThreePOS.class
 io/github/andrewsumsion/threepos/PluginLoader$2.class

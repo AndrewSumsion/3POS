@@ -1,7 +1,6 @@
 package io.github.andrewsumsion.threepos;
 
 import java.io.File;
-import java.nio.file.FileAlreadyExistsException;
 import java.util.Map;
 
 public abstract class Plugin {

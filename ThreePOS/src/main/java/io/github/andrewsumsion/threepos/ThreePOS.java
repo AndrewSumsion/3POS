@@ -53,6 +53,8 @@ public class ThreePOS {
     }
 
     public static void submitOrder(Order order) {
+        System.out.println("Order submitted:");
+        System.out.println(new JsonSerializer().serialize(order));
         orders.add(order);
     }
 }

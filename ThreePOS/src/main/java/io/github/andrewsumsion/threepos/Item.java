@@ -7,8 +7,11 @@ public class Item {
     private String name;
     private double price;
     private List<String> modifiers;
+    private int quantity;
 
-    public Item() {}
+    public Item() {
+        this("", 0);
+    }
 
     public Item(String name, double price) {
         this(name, price, new ArrayList<String>());
@@ -32,6 +35,10 @@ public class Item {
         return name;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public void setPrice(double price) {
         this.price = price;
     }
@@ -42,5 +49,9 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }

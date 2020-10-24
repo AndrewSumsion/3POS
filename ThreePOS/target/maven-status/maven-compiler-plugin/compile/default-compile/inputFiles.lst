@@ -1,6 +1,7 @@
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Test.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Order.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/PluginLoader.java
+/home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/PluginInfo.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/ThreePOS.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Plugin.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Menu.java
