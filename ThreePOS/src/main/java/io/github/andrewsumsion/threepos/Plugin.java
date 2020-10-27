@@ -15,7 +15,7 @@ public abstract class Plugin {
     }
 
     protected void submitOrder(Order order) {
-        ThreePOS.submitOrder(order);
+        ThreePOS.submitOrder(this, order);
     }
     protected File getPluginFolder() {
         File folder = new File("plugins", getName());

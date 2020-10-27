@@ -6,5 +6,7 @@
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Plugin.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Menu.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/JsonSerializer.java
+/home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Translator.java
+/home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Translators.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Item.java
 /home/andrew/Workspace/3POS/ThreePOS/src/main/java/io/github/andrewsumsion/threepos/Serializer.java

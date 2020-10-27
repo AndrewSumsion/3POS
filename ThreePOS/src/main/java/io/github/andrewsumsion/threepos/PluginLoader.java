@@ -134,7 +134,6 @@ public class PluginLoader {
         PluginInfo pluginInfo = this.pluginInfo.get(name);
 
         Plugin plugin = plugins.get(name);
-        System.out.println(plugin.getClass().getName());
 
         Thread thread = new Thread(new Runnable() {
             public void run() {
@@ -153,6 +152,13 @@ public class PluginLoader {
             }
         }
         return result;
+    }
+
+    public void loadTranslators() {
+        for(Plugin plugin : plugins.values()) {
+            File translationFile = new File(plugin.getPluginFolder(), "translations.yml");
+            Translators.getInstance().registerTranslator(plugin.getName(), new Translator(translationFile));
+        }
     }
 
     public Map<String, Plugin> getPlugins() {

@@ -27,7 +27,11 @@ public class ThreePOS {
         Menu.instantiate();
         PluginLoader.getInstance().loadPlugins(new File("plugins"));
         PluginLoader.getInstance().enablePlugins();
+        PluginLoader.getInstance().loadTranslators();
         while(true) {
+            if(Thread.currentThread().isInterrupted()) {
+                break;
+            }
             Order order;
             try {
                 order = orders.take();
@@ -52,9 +56,23 @@ public class ThreePOS {
         client.execute(post);
     }
 
-    public static void submitOrder(Order order) {
-        System.out.println("Order submitted:");
-        System.out.println(new JsonSerializer().serialize(order));
-        orders.add(order);
+    public static void submitOrder(Plugin plugin, Order order) {
+        Translator translator = Translators.getInstance().getTranslator(plugin.getName());
+        for(int i = 0; i < order.getItems().size(); i++) {
+            Item[] newItems = translator.translate(order.getItems().get(i));
+            order.getItems().set(i, newItems[0]);
+            if(newItems.length > 1) {
+                for(int j = 1; j < newItems.length; j++) {
+                    order.getItems().add(i + 1, newItems[j]);
+                    i += 1;
+                }
+            }
+        }
+
+        try {
+            orders.put(order);
+        } catch (InterruptedException ignored) {
+
+        }
     }
 }
